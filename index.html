@@ -7,20 +7,22 @@
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
       crossorigin="anonymous"
     />
-    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
     <div id="banner">
       <h1>Ben is Gay</h1>
       <p>
-        This is a webiste dedicated to informing the public that Ben is indeed
+        This is a website dedicated to informing the public that Ben is indeed
         gay
       </p>
-      <a class="btn btn-ghost" href="#">agree</a>
-      <p>
-        <a href="#">incriminating link</a>
-      </p>
+      <a class="btn btn-ghost" onclick="clickcount()">agree</a>
+      <p>Clicks: <a id="clicks">0</a></p>
     </div>
 
     <div class="container">
@@ -69,8 +71,19 @@
       </div>
     </div>
 
-    <div id="footer">
-      <p>-brought to you by karmar</p>
+    <div class="footer">
+      <div class="footer-links">
+        <a href="https://github.com/karmar4"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/karmar-barrett-444kkk/"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="footer-copyright">
+        Made with <i class="fas fa-heart"></i> by Karmar
+      </div>
     </div>
   </body>
 </html>

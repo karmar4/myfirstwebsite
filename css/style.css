@@ -1,12 +1,14 @@
+@import url("./components/footer.css");
+
 h1 {
-  font-family: "Courier New", Monospace;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: rgb(40, 40, 40);
   font-weight: bold;
   font-size: 30px;
 }
 
 h2 {
-  font-family: "serif";
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: rgb(40, 40, 40);
   font-weight: lighter;
   font-size: 20px;
@@ -28,8 +30,10 @@ a:hover {
   border-radius: 50px;
   font-weight: lighter;
   font-size: 19px;
-  opacity: 0.6;
+  opacity: 0.8;
   transition: opacity 0.3s ease;
+  position: relative;
+  top: 30px;
 }
 
 #banner {
