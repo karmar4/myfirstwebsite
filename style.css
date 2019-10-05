@@ -1,0 +1,69 @@
+h1 {
+  font-family: "Courier New", Monospace;
+  color: rgb(40, 40, 40);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+h2 {
+  font-family: "serif";
+  color: rgb(40, 40, 40);
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+a:hover {
+  text-decoration: none;
+  color: purple;
+}
+
+.btn-ghost {
+  color: #4a4a4a;
+  border: 1px solid #4a4a4a;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  font-size: 19px;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+#banner {
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.2) 50%
+    ),
+    url("https://unsplash.it/1300/500?random");
+  background-size: cover;
+  padding: 150px;
+  color: white;
+}
+
+#banner h1 {
+  color: white;
+  font-size: 50px;
+}
+
+#banner p {
+  color: white;
+  opacity: 0.8;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+#footer p {
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+.card {
+  padding: 50px;
+  text-align: center;
+  font-weight: lighter;
+}
