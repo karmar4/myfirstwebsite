@@ -14,18 +14,9 @@ h2 {
   font-size: 20px;
 }
 
-a {
-  text-decoration: none;
-  color: blue;
-}
-a:hover {
-  text-decoration: none;
-  color: purple;
-}
-
 .btn-ghost {
-  color: #4a4a4a;
-  border: 1px solid #4a4a4a;
+  color: #bfbdc1;
+  border: 1px solid #bfbdc1;
   padding: 8px 24px;
   border-radius: 50px;
   font-weight: lighter;
@@ -34,13 +25,39 @@ a:hover {
   transition: opacity 0.3s ease;
   position: relative;
   top: 30px;
+  left: 25px;
+}
+
+.btn-ghost:hover {
+  opacity: 1;
+  color: #bfbdc1;
+}
+
+.badge {
+  position: relative;
+  left: 10px;
+  top: 10px;
+  opacity: 1;
+  vertical-align: initial;
+  background-color: red;
+}
+
+p#banner.badge {
+  color: white;
+  opacity: 0.8;
+  font-weight: lighter;
+  font-size: 15px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
 }
 
 #banner {
   text-align: center;
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.8) 0%,
-      rgba(0, 0, 0, 0.2) 50%
+      rgba(0, 0, 0, 0.4) 50%
     ),
     url("https://unsplash.it/1300/500?random");
   background-size: cover;

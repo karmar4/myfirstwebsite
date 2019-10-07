@@ -21,8 +21,15 @@
         This is a website dedicated to informing the public that Ben is indeed
         gay
       </p>
-      <a class="btn btn-ghost" onclick="clickcount()">agree</a>
-      <p>Clicks: <a id="clicks">0</a></p>
+      <script>
+        var clicks = 0;
+        function myFunction() {
+          clicks += 1;
+          document.getElementById("demo").innerHTML = clicks;
+        }
+      </script>
+      <a class="btn btn-ghost" onclick="myFunction()">agree</a>
+      <p class="badge" id="demo">0</p>
     </div>
 
     <div class="container">
