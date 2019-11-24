@@ -1,13 +1,17 @@
 <html>
   <head>
-    <title>My playground landing</title>
+    <title>Ben 'the Unit's website</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
       crossorigin="anonymous"
     />
-    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
@@ -17,10 +21,23 @@
         This is a webiste dedicated to informing the public that Ben is indeed
         a dork
       </p>
-      <a class="btn btn-ghost" href="#">agree</a>
-      <p>
-        <a href="#">incriminating link</a>
-      </p>
+      <script>
+        let clicks = 0;
+        const incrementCounter = () => {
+          clicks += 1;
+          document.getElementById("counter").innerHTML = clicks;
+        };
+
+        let start = Date.now();
+
+        document.onload = setInterval(() => {
+          let delta = Date.now() - start;
+          const timer = document.getElementById("timer");
+          timer.innerText = (Math.floor(delta / 1000) % 60) + " seconds";
+        }, 1000);
+      </script>
+      <a class="btn btn-ghost" onclick="incrementCounter()">agree</a>
+      <p class="badge" id="counter">0</p>
     </div>
 
     <div class="container">
@@ -33,7 +50,7 @@
               width="100"
             />
             <h2>Wagie</h2>
-            <p>He is a wagie, a <strong>very strong</strong> wagie</p>
+            <p>The humble wagie save up all their bi-weekly <i>dollayrdoos</i> to have a "night out on the town"</p>
           </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4">
@@ -43,10 +60,9 @@
               alt="picture description"
               width="100"
             />
-            <h2>Dork</h2>
+            <h2>Doomer</h2>
             <p>
-              With most of his interactions being with a
-              <strong>computer</strong>
+              He has taken <mark><em><strong>the final redpill</mark></strong></em>
             </p>
           </div>
         </div>
@@ -58,10 +74,9 @@
                 alt="picture description"
                 width="100"
               />
-              <h2>Weeaboo</h2>
+              <h2>Weeb</h2>
               <p>
-                He loves anime, and would <strong>marry</strong> an anime girl
-                if it was legal
+                May or may not have a body pillow. Whatever you do, don't call him a <strong>weeaboo</strong>, it only makes him more powerful.
               </p>
             </div>
           </div>
@@ -69,8 +84,27 @@
       </div>
     </div>
 
-    <div id="footer">
-      <p>-brought to you by karmar</p>
+    <div class="footer-banner">
+      <p>
+        You've just spent <span id="timer">0 seconds</span> on this site. Thank you for contributing to a larger cause. Your time is
+          the most important recource you will ever have.
+        </p>
+    </div>
+
+    <div class="footer">
+      <div class="footer-links">
+        <a href="https://github.com/karmar4"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/karmar-barrett-444kkk/"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+
+      <div class="footer-copyright">
+        Made with <i class="fas fa-heart"></i> by Karmar
+      </div>
     </div>
   </body>
 </html>
