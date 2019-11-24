@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>My playground landing</title>
+    <title>Ben 'the Unit's website</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -15,21 +15,29 @@
   </head>
 
   <body>
-    <div id="banner">
+    <div class="banner">
       <h1>Ben is Gay</h1>
       <p>
         This is a website dedicated to informing the public that Ben is indeed
         gay
       </p>
       <script>
-        var clicks = 0;
-        function myFunction() {
+        let clicks = 0;
+        const incrementCounter = () => {
           clicks += 1;
-          document.getElementById("demo").innerHTML = clicks;
-        }
+          document.getElementById("counter").innerHTML = clicks;
+        };
+
+        let start = Date.now();
+
+        document.onload = setInterval(() => {
+          let delta = Date.now() - start;
+          const timer = document.getElementById("timer");
+          timer.innerText = (Math.floor(delta / 1000) % 60) + " seconds";
+        }, 1000);
       </script>
-      <a class="btn btn-ghost" onclick="myFunction()">agree</a>
-      <p class="badge" id="demo">0</p>
+      <a class="btn btn-ghost" onclick="incrementCounter()">agree</a>
+      <p class="badge" id="counter">0</p>
     </div>
 
     <div class="container">
@@ -42,7 +50,7 @@
               width="100"
             />
             <h2>Wagie</h2>
-            <p>He is a wagie, a <strong>very strong</strong> wagie</p>
+            <p>The humble wagie save up all their bi-weekly <i>dollayrdoos</i> to have a "night out on the town"</p>
           </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4">
@@ -52,10 +60,9 @@
               alt="picture description"
               width="100"
             />
-            <h2>Dork</h2>
+            <h2>Doomer</h2>
             <p>
-              With most of his interactions being with a
-              <strong>computer</strong>
+              He has taken <mark><em><strong>the final redpill</mark></strong></em>
             </p>
           </div>
         </div>
@@ -67,15 +74,21 @@
                 alt="picture description"
                 width="100"
               />
-              <h2>Weeaboo</h2>
+              <h2>Weeb</h2>
               <p>
-                He loves anime, and would <strong>marry</strong> an anime girl
-                if it was legal
+                May or may not have a body pillow. Whatever you do, don't call him a <strong>weeaboo</strong>, it only makes him more powerful.
               </p>
             </div>
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="footer-banner">
+      <p>
+        You've just spent <span id="timer">0 seconds</span> on this site. Thank you for contributing to a larger cause. Your time is
+          the most important recource you will ever have.
+        </p>
     </div>
 
     <div class="footer">
@@ -88,6 +101,7 @@
         <a href="#"><i class="fab fa-facebook"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
       </div>
+
       <div class="footer-copyright">
         Made with <i class="fas fa-heart"></i> by Karmar
       </div>

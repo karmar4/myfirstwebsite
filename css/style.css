@@ -1,5 +1,6 @@
 @import url("./components/footer.css");
 
+
 h1 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: rgb(40, 40, 40);
@@ -42,7 +43,7 @@ h2 {
   background-color: red;
 }
 
-p#banner.badge {
+p.banner.badge {
   color: white;
   opacity: 0.8;
   font-weight: lighter;
@@ -53,7 +54,7 @@ p#banner.badge {
   text-align: center;
 }
 
-#banner {
+.banner {
   text-align: center;
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.8) 0%,
@@ -61,23 +62,25 @@ p#banner.badge {
     ),
     url("https://unsplash.it/1300/500?random");
   background-size: cover;
-  padding: 150px;
+  padding: 10%;
   color: white;
+  max-height: 450px;
+  min-width: 410px;
 }
 
-#banner h1 {
+.banner h1 {
   color: white;
   font-size: 50px;
 }
 
-#banner p {
+.banner p {
   color: white;
   opacity: 0.8;
   font-size: 30px;
   font-weight: lighter;
 }
 
-#footer p {
+.footer p {
   color: white;
   background-color: black;
   text-align: center;
@@ -87,4 +90,20 @@ p#banner.badge {
   padding: 50px;
   text-align: center;
   font-weight: lighter;
+}
+.footer-banner {
+  text-align: center;
+  max-width: 750px;
+  margin: 8vh auto;
+}
+.footer-banner p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #333;
+  font-weight: 100;
+  padding: 20px;
+}
+
+mark {
+  background-color: #E86C60;
 }
